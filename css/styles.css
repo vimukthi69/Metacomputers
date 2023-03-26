@@ -1,0 +1,510 @@
+header {
+    background-image: url("../image/neural.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70%;
+    min-height: 70vh;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text1 {
+    color: #181510;
+    position: absolute;
+    left: 10%;
+    top: 32%;
+    text-align: center;
+    font-size: 1rem;
+}
+.text2 {
+    color: #181510;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 30rem;
+    font-size: 2rem;
+}
+.text3 {
+    position: absolute;
+    left: 10%;
+    top: 85%;
+    font-size: 1.5rem;
+}
+.text3 a{
+    color: #181510;
+    padding: 1rem 1.5rem;
+    border: 1px solid #181510;
+    border-radius: 3rem;
+}
+.text3 a:hover{
+    color:#A08C5B;
+    background-color: #181510;
+    transition: .3s;
+}
+
+/* -------- text animation ---------*/
+.text1 h1{
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+.text2 h1{
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+  
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+  
+span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+
+/* --------- section 01 ---------- */
+.catagories{
+    padding: 5rem 5rem 0rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    margin-top: 0 !important;
+    background-color: #181510;
+}
+.cat{
+    margin: 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    border: 1px solid #A08C5B;
+    border-radius: 1rem;
+}
+.cat h2{
+    color: #A08C5B;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.cat:hover{
+    border: 1px solid #181510;
+    box-shadow: 4px 4px 8px #A08C5B;
+    transition: .4s;
+    transform: scale(1.05);
+}
+
+/* --------- section 02 ---------- */
+.dual .header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #A08C5B;
+}
+.dual{
+    padding: 5rem 5rem 5rem 5rem;
+    background-color: #181510;
+}
+.two-deals{
+    display: flex;
+    justify-content: space-around;
+}
+.cat-01, .cat-02{
+    display: flex;
+    padding: 2rem 3rem;
+    background-color: #A08C5B;
+    align-items: center;
+    border-radius: 2rem;
+}
+.description{
+    margin-right: 4rem;
+}
+.bold{
+    font-family: Arial, Helvetica, sans-serif !important;
+    margin-bottom: 1rem;
+    font-size: 2.2rem !important;
+}
+.description h2{
+    color: #181510;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+.description h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+.description a{
+    color: #181510;
+    padding: .5rem .8rem;
+    border: 1px solid #181510;
+    border-radius: 3rem;
+}
+.img img:hover{
+    transform: rotate(10deg) scale(1.5);
+    transition: .5s;
+}
+
+/* --------- section 03 ---------*/
+
+.products{
+    padding: 0rem 8rem 8rem 8rem;
+    text-align: center;
+    background-color: #181510;
+}
+.products .header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #A08C5B;
+}
+.products .subject{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #A08C5B;
+}
+.posts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    margin-top: 0 !important;
+}
+.pad_post {
+    padding: 1rem 0rem;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+}
+.pad_post img{
+    margin-bottom: 1rem;
+}
+.product-name{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color:#A08C5B;
+    margin-bottom: 1rem;
+}
+.pad_post h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:#181510;
+}
+.pad_post p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.pad_post i{
+    padding: .6rem;
+    background-color:#A08C5B;
+    color:#181510;
+    font-size: 1.2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border-radius: 1rem;
+}
+.pad_post img:hover{
+    transform: rotate(10deg) scale(1.2);
+    transition: .8s;
+}
+.pad_post i:hover{
+    background-color:#181510;
+    border: 2px solid #A08C5B;
+    color: #A08C5B;
+    transition: .2s;
+}
+
+/* --------- section 03 ----------*/
+.features{
+    padding: 0rem 8rem 5rem 8rem;
+    background-color:#181510;
+}
+.feature-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+.single-feature{
+    display: flex;
+    align-items: center;
+}
+.single-feature i{
+    color:#181510;
+    font-size: 2rem;
+    margin-right: 2rem;
+    background-color:#A08C5B;
+    padding: .8rem;
+    border-radius: 2rem;
+}
+.single-feature h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+.single-feature i:hover{
+    transform: rotate(10deg) scale(.8);
+    transition: .5s;
+}
+
+/* -------- section 04 ---------*/
+.slider{
+    padding-bottom: 5rem;
+    padding:60px 0;
+    background:#181510;
+}
+.slider h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #A08C5B;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 1rem;
+}
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color:#A08C5B90 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.owl-dot.active {
+    background-color: #A08C5B !important;
+}
+    
+
+/* -------- section 05 ---------*/
+.comments{
+    padding: 5rem 8rem 5rem 8rem;
+    background-color:#181510;
+}
+.comments h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #A08C5B;
+}
+.testimonial{
+    display: flex;
+}
+.testimonial p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.client-info{
+    display: flex;
+    align-items: center;
+}
+.client-info img{
+    margin-right: 2rem;
+}
+.client-info h2{
+    color: #A08C5B;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1250px){
+    .dual, .products, .features{
+        padding: 0rem 2rem 5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .text2{
+        font-size: 2.5rem;
+        width: 18rem;
+    }
+    .text3{
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+    .catagories{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cat h2{
+        font-size: 1rem;
+    }
+    .posts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dual{
+        display: block;
+    }
+    .cat-01{
+        margin-bottom: 2rem;
+    }
+    .cat-01, .cat-02{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 2rem;
+    }
+    .description{
+        margin-right: 0rem;
+    }
+    .single-feature i{
+        font-size: 1.2rem;
+    }
+    .single-feature h2{
+        font-size: 1.2rem;
+    }
+    .comments{
+        padding: 5rem 3rem 5rem 3rem;
+    }
+    .testimonial{
+        display: block;
+    }
+    .testimonial-01{
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width: 575px){
+    header{
+        height: 100% !important;
+        min-height: 100vh !important;
+    }
+    .line-01{
+        display: none;
+    }
+    .header{
+        background-position: left;
+    }
+    .text2{
+        font-size: 1.8rem;
+        width: 18rem;
+    }
+    .text3{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .dual, .products, .features, .slider, .comments{
+        padding-bottom: 3rem;
+    }
+    .dual, .products, .features{
+        padding-top: 3rem;
+    }
+    .two-deals{
+        display: block;
+    }
+    .dual .header{
+        font-size: 1.2rem;
+    }
+    .catagories{
+        display: block;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    .slider{
+        padding: 2rem;
+    }
+    .slider h1{
+        font-size: 2rem;
+    }
+    .owl-dot {
+        height: 8px !important;
+        width: 8px !important;
+    }
+    .dual{
+        text-align: center;
+    }
+    .cat-01, .cat-02{
+        display: block;
+    }
+    .bold{
+        font-size: 1.6rem !important;
+    }
+    .description h2{
+        font-size: 1rem;
+    }
+    .description{
+        margin-bottom: 1rem !important;
+    }
+    .products .header{
+        font-size: 1.8rem;
+    }
+    .posts{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pad_post {
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    .feature-list{
+        display: block;
+        padding: 1rem;
+    }
+    .single-feature{
+        margin-bottom: 2rem;
+    }
+    .fea-last{
+        margin-bottom: 0rem !important;
+    }
+    .comments{
+        text-align: center;
+        padding: 1.5rem 2rem;
+    }
+    .comments h1{
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+}

@@ -1,0 +1,244 @@
+.nav-bar {
+    padding: 1.5rem 3rem;
+    background-color: #181510;
+  }
+  .line-01{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #A08C5B;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+  }
+  .line-02{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-bar .logo img {
+    width: 6.5rem;
+  }
+  .nav-bar .hamberger {
+    display: none;
+  }
+  .nav-bar .hamberger span {
+    display: block;
+    background-color: #A08C5B;
+    height: 2px;
+    width: 15px;
+    margin-bottom: 3px;
+  }
+  .nav-bar .links {
+    display: flex;
+  }
+  .nav-bar .links a {
+    color: #A08C5B;
+    margin-right: 2rem;
+    font-family: "Abel", sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+  }
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #181510;
+    line-height: 2.5rem;
+    padding-top: 1.5rem;
+    padding-left: .5rem;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /*mobile version*/
+  @media screen and (max-width: 768px) {
+    .links {
+      margin-right: 0px;
+      position: absolute;
+      right: 0px;
+      height: 90vh !important;
+      width: 100%;
+      top: 5.15rem;
+      background-color: #A08C5B;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+    .nav-bar .links a{
+      color: #181510 !important;
+    }
+    .links li {
+      opacity: 0;
+    }
+    .nav-bar .hamberger {
+      display: block;
+    }
+    .nav-bar .icons{
+        display: none;
+    }
+  }
+  /*mobile version*/
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    transform-origin: 25% 25%;
+  }
+  .toggle .line2 {
+    opacity: 0 !important;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    transform-origin: 25% 25%;
+  }
+  .bg_opacity {
+    opacity: 60%;
+  }
+
+  /* ----------- footer ------------*/
+footer{
+    background-color: #181510;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    line-height: 1.8rem;
+}
+footer img{
+    margin-bottom: .5rem;
+}
+footer p{
+    margin-bottom: .5rem;
+    color: white;
+}
+footer h2{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+footer h3{
+    color: white;
+    font-size: 1rem;
+}
+footer h4{
+    color: white;
+}
+.footer-col{
+    display: block;
+    width: 25%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.footer-col h3:hover{
+    margin-left: 1rem;
+    color: #A08C5B;
+    transition: .5s;
+}
+.footer-col h4{
+    font-size: .7rem;
+}
+footer .link a{
+    color: #A08C5B;
+}
+.social-icons{
+    display: flex;
+    margin-top: .5rem;
+    overflow: hidden;
+}
+.social-icons i{
+    padding: .8rem;
+    background-color: #A08C5B;
+    border-radius: .8rem;
+    margin-right: 1rem;
+}
+.contact h3{
+  font-size: .8rem !important;
+}
+
+/* --------- t&c ---------- */
+.tc{
+    display: flex;
+    padding: 1rem;
+    background-color: #181510;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #A08C5B;
+}
+.copyright{
+    float: left;
+}
+.tcpp{
+    float: right;
+    display: flex;
+}
+.ml{
+    margin-right: 2rem;
+}
+/* --------- mobile version ----------*/
+
+@media screen and (max-width: 1020px) {
+    header{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-col{
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 575px){
+    footer{
+        display: block;
+        padding-top: 0;
+        margin-top: 0rem;
+    }
+    .footer-col{
+        margin: 0;
+        padding-bottom: 0 !important;
+    }
+    .tc{
+        display: block;
+        text-align: center;
+        padding: 1rem;
+    }
+    .copyright{
+        float: none;
+        margin-bottom: 1rem;
+    }
+    .tcpp{
+        float: none;
+        display: block;
+    }
+    .ml{
+        margin-right: 0rem;
+    }
+}

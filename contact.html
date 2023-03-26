@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global-styles.css">
+    <link rel="stylesheet" href="./css/contact-styles.css">
+    <link rel="stylesheet" href="./css/nav2.css">
+
+    <!--font awesome icons-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+    <title>Meta | Contact</title>
+</head>
+
+<header>
+  <nav class="nav-bar">
+    <a class="logo">
+        <img src="./image/png white.png" alt="zieg">
+    </a>
+    <div class="hamberger">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+     </div>
+    <ul class="links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <div class="icons">
+      <i class="fa fa-user float-right" aria-hidden="true" style="font-size: 1.5rem; color: #A08C5B;"></i>
+      <i class="fa fa-shopping-cart float-right" aria-hidden="true" style="font-size: 1.5rem;color: #A08C5B;margin-right: 2rem;"></i>
+    </div>
+  </nav>
+</header>
+
+<body>
+    <main>
+        <section class="whatsapp">
+          <a href="https://api.whatsapp.com/send?phone=94768600639"><i class="fa fa-whatsapp" style="color: white; font-size: 2rem;"></i></a>
+        </section>
+        <section class="contact-form">
+            <h3>Hey, keep in touch with us</h3>
+            <div class="container">
+              <form method="POST" action="" name="feedback" onsubmit="return validateForm()">
+                <div class="flex">
+                  <div class="row">
+                    <div class="col-50">
+                      <input type="text" name="name" class="form-control" value="" required placeholder="Your name goes here">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-50 emaill">
+                      <input type="email" name="email" class="form-control" value="" required placeholder="Your email goes here">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-100">
+                    <input type="text" name="subject" class="form-control" value="" required placeholder="Subject">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-100">
+                    <textarea name="message" placeholder="Discribe your requirement" class="form-control" style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="reset" name="reset" value="Reset">
+                  <input type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+            </div>
+        </section>
+        <section class="details">
+          <div class="block-01 block">
+            <i class="fa fa-street-view" aria-hidden="true" style="color: #181510; font-size: 4rem;"></i>
+            <h2>Address</h2>
+            <h3>142/1/1 Kotugoda road, Mukalangamuwa, Seeduwa</h3>
+          </div>
+          <div class="block-02 block">
+            <i class="fa fa-phone" aria-hidden="true" style="color: #181510; font-size: 4rem;"></i>
+            <h2>Phone</h2>
+            <h3>0768600639</h3>
+            <h3>0312225499</h3>
+          </div>
+          <div class="block-03 block">
+            <i class="fa fa-envelope-o" aria-hidden="true" style="color: #181510; font-size: 4rem;"></i>
+            <h2>Email</h2>
+            <h3>metacomputers.lk@gmail.com</h3>
+            <h3>metacomputers.lk</h3>
+          </div>
+        </section>
+        <section class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.2159230038674!2d79.84438991469145!3d7.216193394790478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2efe0c7a8be71%3A0x26299dd88393a045!2szieg%20industries!5e0!3m2!1sen!2slk!4v1654169532187!5m2!1sen!2slk" style="border:0; width: 80vw; height: 50vh;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>  
+    
+    <footer>
+      <div class="footer-col">
+          <img src="./image/png white.png" alt="" width="120" height="40">
+          <p>To deliver an outstanding quality service that: Customers are satisfied with and recommend to friends and family.</br>We care your dreams.</p>
+          <div class="social-icons">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true" style="color: white; font-size: 1rem;"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true" style="color: white; font-size: 1rem;"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true" style="color: white; font-size: 1rem;"></i></a>
+              <a href=""><i class="fa fa-youtube" aria-hidden="true" style="color: white; font-size: 1rem;"></i></a>
+          </div>
+      </div>
+      <div class="footer-col">
+          <a href=""><h2>My Acoount</h2></a>
+          <a href=""><h3>My Account</h3></a>
+          <a href=""><h3>Contact</h3></a>
+          <a href=""><h3>Shop</h3></a>
+          <a href=""><h3>Shopping Cart</h3></a>
+          <a href=""><h3>Services Login</h3></a>
+      </div>
+      <div class="footer-col">
+          <h2>Services</h2>
+          <a href=""><h3>Delivery</h3></a>
+          <a href=""><h3>Warrenty</h3></a>
+          <a href=""><h3>build</h3></a>
+          <a href=""><h3>Shopping Cart</h3></a>
+          <a href=""><h3>Services Login</h3></a>
+      </div>
+      <div class="footer-col link contact">
+          <h2>Contact Info</h2>
+          <h3>Address : 142/1/1 Kotugoda rd, Mukalangamuwa, Seeduwa</h3>
+          <h3>Phone : +94 741002005</h3>
+          <h3>email : metacomputers@gmail.com</h3>
+          <h3>metacomputers.lk</h3>
+          <h4>Designed and Developed by <a>www.ziegind.com</a></h4>
+      </div>
+  </footer>
+
+  <section class="tc">
+    <div class="copyright">
+      Meta Computers 	&copy; 2022
+    </div>
+    <div class="tcpp">
+      <a class="ml">Terms and Conditions</a>
+      <a>Privacy and Policy</a>
+    </div>
+  </section>
+
+</body>
+</html>
