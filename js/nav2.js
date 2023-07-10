@@ -2,18 +2,12 @@ const navSlide =() =>{
     const hamberger = document.querySelector('.hamberger');
     const nav = document.querySelector('.links');
     const navLinks = document.querySelectorAll('.links li');
-    var banner = document.getElementsByClassName('banner')[0];
     var header = document.getElementsByTagName('header')[0];
     var isHeaderExpanded = false;
     
     hamberger.addEventListener('click',()=>{
     // toggle nav
      nav.classList.toggle('nav-active');
-     if (banner.style.display === 'none') {
-        banner.style.display = 'block';
-      } else {
-        banner.style.display = 'none';
-      }
 
       //
       if (isHeaderExpanded) {

@@ -146,6 +146,9 @@ footer h3{
 footer h4{
     color: white;
 }
+footer .raw-one{
+  display:flex !important;
+}
 .footer-col{
     display: block;
     width: 25%;
